@@ -18,7 +18,7 @@ Este documento define a ordem cronológica e lógica para o desenvolvimento do *
 *O foco aqui é garantir que os dados possam ser salvos, listados e protegidos, antes mesmo de existir uma interface gráfica.*
 
 - [X] **2.1 Setup do Projeto API (`apps/api`):** Inicializar o projeto NestJS (ou Express/Go).
-- [ ] **2.2 Modelagem de Dados (Prisma ORM):** 
+- [X] **2.2 Modelagem de Dados (Prisma ORM):** 
     - Criar o `schema.prisma`.
     - Definir os modelos: `User`, `Tool`, `Category`, `Favorite`.
     - Rodar a primeira migração (`prisma migrate dev`).
