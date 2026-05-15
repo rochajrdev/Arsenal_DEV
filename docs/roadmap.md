@@ -9,7 +9,7 @@ Este documento define a ordem cronológica e lógica para o desenvolvimento do *
 
 - [X] **1.1 Inicialização do Monorepo:** Configurar o Turborepo (ou Nx) na raiz do projeto com o `package.json` principal.
 - [x] **1.2 Configurações Globais (`packages/config`):** Criar as configurações compartilhadas de TypeScript (`tsconfig.json`), ESLint e Prettier para garantir padronização de código entre Front e Back.
-- [ ] **1.3 Ambiente Local de Banco de Dados:** Criar o `docker-compose.yml` na raiz para instanciar o PostgreSQL e o Redis.
+- [X] **1.3 Ambiente Local de Banco de Dados:** Criar o `docker-compose.yml` na raiz para instanciar o PostgreSQL e o Redis.
 - [ ] **1.4 Biblioteca de Tipos (`packages/types`):** Criar as primeiras interfaces globais TypeScript que serão usadas tanto na API quanto no Web (ex: `ITool`, `IUser`).
 
 ---
