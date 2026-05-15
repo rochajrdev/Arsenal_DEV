@@ -1,0 +1,7 @@
+{
+  "extends": "@arsenal/config/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["*.ts"]
+}
