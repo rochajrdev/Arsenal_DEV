@@ -17,7 +17,7 @@ Este documento define a ordem cronológica e lógica para o desenvolvimento do *
 ## ⚙️ Fase 2: Construção da API e Banco de Dados (Backend)
 *O foco aqui é garantir que os dados possam ser salvos, listados e protegidos, antes mesmo de existir uma interface gráfica.*
 
-- [ ] **2.1 Setup do Projeto API (`apps/api`):** Inicializar o projeto NestJS (ou Express/Go).
+- [X] **2.1 Setup do Projeto API (`apps/api`):** Inicializar o projeto NestJS (ou Express/Go).
 - [ ] **2.2 Modelagem de Dados (Prisma ORM):** 
     - Criar o `schema.prisma`.
     - Definir os modelos: `User`, `Tool`, `Category`, `Favorite`.
