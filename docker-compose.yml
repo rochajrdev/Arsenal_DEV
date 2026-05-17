@@ -21,6 +21,22 @@ services:
       - redis_data:/data
     restart: unless-stopped
 
+  app:
+    image: node:24-bookworm
+    container_name: arsenal_app
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "4000:3000" # Web Next.js (Mapeado para 4000 para evitar conflitos)
+      - "3333:3333" # API NestJS
+    environment:
+      - NODE_ENV=development
+    command: sh -c "npm install && npx prisma generate --schema=apps/api/prisma/schema.prisma && npm run dev"
+    depends_on:
+      - postgres
+      - redis
+
 volumes:
   postgres_data:
   redis_data:

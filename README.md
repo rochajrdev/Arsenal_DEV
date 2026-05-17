@@ -21,10 +21,11 @@ Para suportar essa visão, o projeto utiliza uma fundação moderna que prioriza
 - **Ferramentas de Linha de Comando (`apps/cli`):** Um utilitário de terminal projetado para automações, rotinas rápidas e interação direta com a API.
 - **Infraestrutura Base:** Sustentado por **PostgreSQL** para o armazenamento relacional de informações e **Redis** para alta performance em filas e cache.
 
-## 🚀 Como Iniciar (Ambiente de Desenvolvimento)
+## 🚀 Como Iniciar (Ambiente 100% Dockerizado)
+
+O projeto foi configurado para rodar inteiramente via Docker. Você não precisa ter o Node.js instalado na sua máquina!
 
 ### Pré-requisitos
-- [Node.js](https://nodejs.org/) (Recomendado v18+)
 - [Docker](https://www.docker.com/) e [Docker Compose](https://docs.docker.com/compose/)
 
 ### Passos para Instalação
@@ -34,20 +35,15 @@ Para suportar essa visão, o projeto utiliza uma fundação moderna que prioriza
    cd Arsenal_DEV
    ```
 
-2. Instale as dependências gerais:
+2. Suba o ecossistema completo (Banco, Front-end e Back-end):
    ```bash
-   npm install
+   docker-compose up
    ```
+   *(Ou `docker compose up` dependendo da versão do seu Docker)*
 
-3. Suba a infraestrutura local (PostgreSQL na porta 5433 e Redis na porta 6379):
-   ```bash
-   docker-compose up -d
-   ```
-
-4. **Inicie o ambiente**:
-   ```bash
-   npm run dev
-   ```
+> [!TIP]
+> **O que o Docker está fazendo?**
+> Ao rodar esse comando, o Docker levanta o PostgreSQL e o Redis, em seguida sobe um container Node.js (Debian) que mapeia seus arquivos locais. O próprio container instala as dependências (`npm install`), gera o cliente do Prisma e inicia os servidores de desenvolvimento via Turborepo (`npm run dev`). Suas edições no código refletem em tempo real!
 
 ---
 *💡 A visão do Arsenal DEV é estar em constante evolução, acoplando novas ferramentas e otimizando processos.*
