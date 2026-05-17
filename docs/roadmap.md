@@ -23,7 +23,7 @@ Este documento define a ordem cronológica e lógica para o desenvolvimento do *
     - Definir os modelos: `User`, `Tool`, `Category`, `Favorite`.
     - Rodar a primeira migração (`prisma migrate dev`).
 - [x] **2.3 Módulo de Autenticação:** Implementar autenticação (ex: JWT ou integração com Supabase/Auth.js) para permitir login e proteger rotas.
-- [ ] **2.4 CRUD de Ferramentas:** Criar os endpoints HTTP para Listar, Buscar (Search), Criar e Detalhar as ferramentas do arsenal.
+- [x] **2.4 CRUD de Ferramentas:** Criar os endpoints HTTP para Listar, Buscar (Search), Criar e Detalhar as ferramentas do arsenal.
 - [ ] **2.5 Módulo de Favoritos:** Criar os endpoints para um usuário favoritar e desfavoritar uma ferramenta.
 - [ ] **2.6 Seed do Banco de Dados:** Criar um script para popular o banco com algumas ferramentas iniciais reais para testes.
 
